@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .navbar{
+            background-color: black;
+            padding: auto;
+            width: 900px;
+            height: 60px;
+            border-radius: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            overflow: visible;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: large;
+            font-family: inherit;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .ThirdLevelMenu{
+            position: absolute;
+            top: 0px;
+            right: -150px;
+            width: 150px;
+            list-style: none;
+            padding-top: 10px;
+            padding: 0px;
+            margin: 0px;
+            display: none;
+        }
+
+        .ThirdLevelMenu > li {
+            height: 60px;
+            background-color: gray;
+        }
+
+        .ThirdLevelMenu > li:hover {
+            background-color: green;
+        }
+
+        .SecondLevelMenu {
+            position: absolute;
+            top: 30px;
+            left: 0px;
+            width: 165px;
+            list-style: none;
+            padding: 20px 0 0 0;
+            margin: 0px;
+            display: none; 
+        }
+
+        .SecondLevelMenu > li {
+            position: relative;
+            height: 30px;
+            background-color: gray;
+        }
+
+        .SecondLevelMenu > li:hover {
+            background-color: green;
+        }
+
+        .TopLevelMenu {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .TopLevelMenu > li {
+            position: relative;
+            float: left;
+            height: 30px;
+            width: 150px;
+            padding-top: 20px;
+            padding-left: 15px;
+        }
+
+        .TopLevelMenu > li:hover {
+            background-color: green;
+        }
+
+        .TopLevelMenu li:hover > ul {
+            display: inline;
+        }
+
+        .TopLevelMenu a {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-decoration: none;
+            padding: 0 0 0 10px;
+            display: block;
+            font-size: large;
+        }
+
+        .TopLevelMenu a:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="TopLevelMenu">
+            <li>
+                <a id="Land" onloadstart="display(1)">land</a>
+                <ul class="SecondLevelMenu">
+                    <li>
+                        <a>Stockholm</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Stockholm är Svergies huvudstad och här bor det 1 538 517 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Norrköping</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Norrköping är Svergies huvudstad och här bor det 95 618 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Göteborg</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Göteborg är Svergies huvudstad och här bor det 581 822 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Västerås</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Västerås är Svergies huvudstad och här bor det 119 373 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Malmö</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Malmö är Svergies huvudstad och här bor det 307 496 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Finland</a>
+                <ul class="SecondLevelMenu">
+                    <li>
+                        <a>Helsingfors</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Helsingfors är Finlands huvudstad och här bor det 1 249 820 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Oulu</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Oulu är en stad i Finlnd och här bor det 198 358 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Jyväskylä</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Jyväskylä är en stad i Finlnd och här bor det 121 782 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Tampere</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Tampere är en stad i Finlnd och här bor det 330 711 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Turku</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Turku är en stad i Finlnd och här bor det 269 057 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li> 
+            <li>
+                <a>Norge</a>
+                <ul class="SecondLevelMenu">
+                    <li>
+                        <a>Oslo</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Oslo är Norges huvudstad och här bor det 975 744 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Fredrikstad</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Fredrikstad är en stad i Norge och här bor det 109 907 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Trondheim</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Trondheim är en stad i Norge och här bor det 177 617 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Bergen</a>
+                        <ul class="ThirdLevelMenu">
+                            <li>
+                                <p>Bergen är en stad i Norge och här bor det 252772 mäniskor</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>                
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
